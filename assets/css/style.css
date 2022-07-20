@@ -30,6 +30,7 @@ body {
     background-image: linear-gradient(45deg, #005aa7, #fffde4);
     color: rgba(0, 0, 0, 0.9);
     position: relative;
+    padding-bottom: 5vh;
 }
 
 .intro .text {
@@ -163,8 +164,14 @@ body {
     display: inline-block;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main .paragraph {
-    margin: 10vh 20%;
+    margin: 5vh 20%;
     max-width: 800px;
     text-align: justify;
     line-height: 1.4;
@@ -199,7 +206,7 @@ body {
 }
 
 .main-para {
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -210,13 +217,16 @@ body {
 
 @media only screen and (max-width: 850px) {
     .navbar .title p {
-        display: none;
+        /* display: none; */
     }
     .navbar .btn {
         display: none;
     }
     #toDarkMode {
         display: block;
+    }
+    .main .paragraph {
+        margin: 5vh 10%;
     }
 }
 
