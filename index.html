@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreams</title>
-    <!-- 950px -->
+    <title>Vươn đến những vì sao</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link id="light-css" rel="stylesheet" media="" href="assets/css/style-light.css">
+    <link id="dark-css" rel="stylesheet" media="none" href="assets/css/style-dark.css">
     <link rel="stylesheet" href="assets/css/reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:ital,wght@0,800;1,500&family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
 </head>
-<body onscroll="a()">
+<body onscroll="changeNavbarColor()">
+    <div id="test"></div>
     <div class="navbar-container">
         <div class="navbar">
             <div class="title">
@@ -21,11 +24,55 @@
             <p>CL<br>1922</p>
             </div>
             <div class="btn-container">
-                <div class="i1 btn">01-10</div>
-                <div class="i2 btn">11-20</div>
-                <div class="i3 btn">21-30</div>
-                <div class="i4 btn">31-40</div>
-                <div id="toDarkMode" class="btn">Dark mode: Off</div>
+                <div class="i1 btn">01-10
+                    <div class="selection">
+                        <a href="#1">Nguyễn Hoàng Minh Anh</a>
+                        <a href="#2">Trần Chương Anh</a>
+                        <a href="#3">Phạm Dương Gia Bảo</a>
+                        <a href="#4">Phan Phát Duy Bình</a>
+                        <a href="#5">Trương Trí Dũng</a>
+                        <a href="#6">Hà Minh Dũng</a>
+                        <a href="#7">Nguyễn Minh Duy</a>
+                        <a href="#8">Lê Thị Mỹ Duyên</a>
+                        <a href="#9">Trương Tiến Đạt</a>
+                        <a href="#10">Tô Thị Ngọc Hiền</a>
+                    </div>
+                </div>
+                <div class="i2 btn">11-20
+                    <div class="selection">
+                        <a href="#11">Hà Minh Hiếu</a>
+                        <a href="#12">Đặng Ngọc Hoàng</a>
+                        <a href="#13">Nguyễn Huỳnh Tấn Khải</a>
+                        <a href="#14">Vương Khang</a>
+                        <a href="#15">Nguyễn Đăng Khoa</a>
+                        <a href="#16">Bùi Đức Mạnh</a>
+                        <a href="#17">Nguyễn Hà Hùng Minh</a>
+                        <a href="#18">Huỳnh Giáng My</a>
+                        <a href="#19">Phạm Hoàng Gia Nghi</a>
+                        <a href="#20">Nguyễn Duy Ngọc</a>
+                    </div>
+                </div>
+                <div class="i3 btn">21-30
+                    <div class="selection">
+                        <a href="#21">Phan Hồng Ngọc</a>
+                        <a href="#22">Nguyễn Cao Đức Nguyên</a>
+                        <a href="#23">Hà Quyền Nhân</a>
+                        <a href="#24">Nguyễn Huỳnh Thảo Như</a>
+                        <a href="#25">Nguyễn Thạch Thiên Phúc</a>
+                        <a href="#26">Nguyễn Minh Quang</a>
+                        <a href="#27">Đặng Ngọc Quyên</a>
+                        <a href="#28">Hồ Trần Nhật Quyền</a>
+                        <a href="#29">Đặng Minh Thiện</a>
+                        <a href="#30">Nguyễn Quang Thông</a>
+                    </div>
+                </div>
+                <div class="i4 btn">31-40
+                    <div class="selection">
+                        <a href="#31">Nguyễn Minh Tiến</a>
+                        <a href="#32">Nguyễn Thanh Tuấn</a>
+                    </div>
+                </div>
+                <div id="toDarkMode" class="btn" onclick="changeTheme()">Dark mode: Off</div>
             </div>
         </div>
     </div>
@@ -187,6 +234,10 @@
         <div class="paragraph"><a id="32"></a>
             <div class="author-ri">Nguyễn Thanh Tuấn</div><img class="img-le" src="assets/img/32.jpeg" alt="">
             <p class="main-para">Ước mơ như là nguồn động lực thúc đẩy con người phát triển bản thân mình, ai cũng có riêng một ước mơ cho bản thân và em cũng vậy. Ước mơ của em là trở thành một chuyên gia tâm lý, giúp mọi người chia sẻ những niềm vui, chuyện buồn trong cuộc sống, chữa lành những vết thương lòng của mọi người. Ngay từ bé, em luôn muốn được chia sẻ, tâm sự, cho mọi người những lời khuyên để có thể giải quyết được những vấn đề của họ dù lớn hay nhỏ. Đó là động lực giúp em có thể thực hiện ước mơ của mình. Ước mơ của em tuy không lớn lao gì nhưng em sẽ cố gắng trau dồi kiến thức, phát triển bản thân để có thể biến ước mơ thành sự thật.</p>
+        </div>
+        <div id="footer" class="paragraph">
+            Một sản phầm của:<br>Nguyễn Quang Thông<br>
+            <a href="mailto:nguyenquangthong292@gmail.com">nguyenquangthong292@gmail.com</a>.
         </div>
     </div>
     <script src="assets/js/index.js"></script>

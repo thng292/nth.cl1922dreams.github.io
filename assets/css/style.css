@@ -11,9 +11,14 @@
     border-radius: 3px;
 }
 
-@keyframes swipeLeft {
-    0% {width: 0;}
-    100% {width: 100%;}
+@keyframes toDark {
+    0% {background-color: #fff;}
+    100% {background-color: #000;}
+}
+
+@keyframes toLight {
+    0% {background-color: #fff;}
+    100% {background-color: #000;}
 }
 
 body {
@@ -25,47 +30,34 @@ body {
     /* overflow-x: hidden; */
     height: 100vh;
     width: 100vw;
-    background-color: #f9fcfbc9;
-    /* background-image: linear-gradient(45deg, #2980b9, #6dd5fa, #ffffff); */
-    background-image: linear-gradient(45deg, #005aa7, #fffde4);
-    color: rgba(0, 0, 0, 0.9);
     position: relative;
-    padding-bottom: 5vh;
+    /* margin-bottom: 5vh; */
+    font-size: 2vh;
 }
 
 .intro .text {
     min-height: 100%;
-    background: linear-gradient(to right, #373b44, #4286f4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     margin: 0 10%;
 }
 
 .text .title-wrapper {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: linear-gradient(to right, #373b44, #4286f4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .effect {
     width: 100vw;
     min-height: 100%;
-    background-color: #f9fcfbc9;
     position: absolute;
     z-index: 0;
-    /* filter: blur(8px); */
 }
 
 .title-wrapper {
-    /* margin: 10% 0 0 10%; */
     font-family: 'Montserrat', sans-serif;
-    /* max-width: 1500px; */
 }
 
 .title-wrapper .main-title {
@@ -107,9 +99,6 @@ body {
     z-index: 1;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, #373b44, #4286f4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .navbar {
@@ -133,11 +122,44 @@ body {
     margin: auto 0;
 }
 
+.btn .selection {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+    padding: 0 10px;
+    transform: translateX(-15px);
+    box-shadow: 0 0 5px rgba(128,128,128,0.5);
+    border-radius: 10px;
+}
+
+.selection a {
+    display: block;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.btn .selection a:last-child {
+    border-bottom: 0;
+}
+
+.btn-container .btn:hover .selection {
+    display: flex;
+} 
+
 .title img {
     height: 30px;
     width: auto;
     float: left;
     
+}
+
+.btn {
+    cursor: pointer;
 }
 
 .navbar .btn-container {
@@ -154,10 +176,7 @@ body {
     padding: 15px;
     min-width: 100px;
     text-align: center;
-}
-
-.navbar .btn:hover {
-    background-color: rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .navbar .title p {
@@ -168,10 +187,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-duration: .5s;
+    padding: 5vh 0;
 }
 
 .main .paragraph {
-    margin: 5vh 20%;
+    margin: 5vh 0;
     max-width: 800px;
     text-align: justify;
     line-height: 1.4;
@@ -196,17 +217,23 @@ body {
 .paragraph .img-le {
     width: 40%;
     float: left;
-    padding: 0 10px 0 0;
+    margin: 5px 10px 0 0;
+    border-radius: 10px;
 }
 
 .paragraph .img-ri {
     width: 40%;
     float: right;
-    padding: 0 0 0 10px;
+    border-radius: 10px;
+    margin: 5px 0 0 10px;
 }
 
 .main-para {
     padding-bottom: 5vh;
+}
+
+#toDarkMode {
+    min-width: 160px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -216,9 +243,6 @@ body {
 }
 
 @media only screen and (max-width: 850px) {
-    .navbar .title p {
-        /* display: none; */
-    }
     .navbar .btn {
         display: none;
     }
@@ -240,4 +264,24 @@ body {
     .navbar .btn-container {
         flex-wrap: wrap;
     }
+}
+
+#test {
+    display: none;
+    position: fixed;
+    height: 46px;
+    width: 100%;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+#footer {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .1em;
 }

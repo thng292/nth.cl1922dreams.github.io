@@ -1,0 +1,46 @@
+/* linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); */
+/* linear-gradient(45deg, #373b44, #4286f4) */
+.intro {
+    background-image: linear-gradient(45deg, #373b44, #4286f4);
+}
+
+.intro .text {
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text .title-wrapper {
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.effect {
+    background-color: #222222c9;
+}
+
+.navbar-container {
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.selection a {
+    background: linear-gradient(to right, #fbd786, #f7797d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#test {
+    background-color: #222;
+}
+
+.main {
+    background-color: #222;
+    color: #eee;
+}
+
+.navbar .btn:hover {
+    background-color: rgba(255, 255, 255,0.2);
+}
