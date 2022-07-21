@@ -252,6 +252,12 @@ body {
     .main .paragraph {
         margin: 5vh 10%;
     }
+    .paragraph .img-le {
+        width: 50%;
+    }
+    .paragraph .img-ri {
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -263,6 +269,12 @@ body {
     }
     .navbar .btn-container {
         flex-wrap: wrap;
+    }
+    .paragraph .img-le {
+        width: 100%;
+    }
+    .paragraph .img-ri {
+        width: 100%;
     }
 }
 
